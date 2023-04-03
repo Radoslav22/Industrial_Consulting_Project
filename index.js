@@ -1,23 +1,23 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-app.set("view engine", "ejs");  
-app.use(express.static(path.resolve(__dirname,'public')));
-const port = 3000 ;
+app.set("view engine", "ejs");
+app.use(express.static(path.resolve(__dirname, 'public')));
+const port = 3000;
 
 
-app.get("/", (req, res) =>{
+app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.get("/contact", (req, res) =>{
-    res.render("contact");
+app.get("/login", (req, res) => {
+    res.render("login");
 });
 
-app.get("/about", (req, res) =>{
-    res.render("about");
+app.get("/signup", (req, res) => {
+    res.render("signup");
 });
 
-app.listen(port, () =>{
+app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
