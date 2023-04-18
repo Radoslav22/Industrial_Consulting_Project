@@ -18,6 +18,10 @@ app.get("/signup", (req, res) => {
     res.render("signup");
 });
 
+app.get("/jobapply", (req, res) => {
+    res.render("jobapply")
+})
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
