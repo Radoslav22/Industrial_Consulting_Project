@@ -21,7 +21,9 @@ app.get("/signup", (req, res) => {
 app.get("/jobapply", (req, res) => {
     res.render("jobapply")
 })
-
+app.get("/applysuccess", (req, res) => {
+    res.render("applysuccess")
+})
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
